@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("bg.avif");
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  
+  h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .container {
+    max-width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(35, 32, 38);
+    height: 350px;
+  }
+  
+  #screen {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: right;
+    margin-top: 5px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: #f0f0f0;
+  }
+  
+  button.op {
+    background-color: #fe750c;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  button:active {
+    background-color: #d9d9d9;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 400px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    h1 {
+      margin-left: 0;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
