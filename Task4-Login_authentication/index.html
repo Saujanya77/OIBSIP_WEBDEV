@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login Authentication System</h1>
+        <div id="login">
+            <div><input type="text" id="username" placeholder="Username"></div>
+            <div><input type="password" id="password" placeholder="Password"></div>
+            <div><button onclick="login()">Login</button></div>
+            <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Register</a></p>
+        </div>
+        <div id="register" style="display:none;">
+            <div><input type="text" id="newUsername" placeholder="New Username"></div>
+            <div><input type="password" id="newPassword" placeholder="New Password"></div>
+            <div><button onclick="register()">Register</button></div>
+            <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+        </div>
+        <div id="message"></div>
+        <div id="final" style="display:none;">
+            <h2>Welcome to the secured page!</h2>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
